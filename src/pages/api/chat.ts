@@ -7,7 +7,7 @@ export const POST: APIRoute = async ({ request }) => {
   try {
     const body = await request.json();
 
-    const completion = await ai.models.generateContent({
+    const completion = await gemini.models.generateContent({
     model: "gemini-2.5-flash",
     contents: body.messages,
     config: {
