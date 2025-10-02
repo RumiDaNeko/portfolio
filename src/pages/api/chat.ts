@@ -15,6 +15,7 @@ export const POST: APIRoute = async ({ request }) => {
         thinkingBudget: 10, // Disables thinking
       },
       temperature: 0.7,
+      maxOutputTokens: 500,
     }
   });
 
