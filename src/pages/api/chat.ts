@@ -9,7 +9,7 @@ export const POST: APIRoute = async ({ request }) => {
 
     const completion = await ai.models.generateContent({
     model: "gemini-2.5-flash",
-    contents: body.messages",
+    contents: body.messages,
     config: {
       thinkingConfig: {
         thinkingBudget: 10, // Disables thinking
