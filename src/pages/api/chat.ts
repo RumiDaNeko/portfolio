@@ -1,9 +1,8 @@
 import type { APIRoute } from 'astro';
 import OpenAI from "openai";
-const { env } = Astro.locals.runtime;
 
 const gemini = new OpenAI({
-    apiKey: env.AI_API_KEY,
+    apiKey: import.meta.env.AI_API_KEY ?? process.env.AI_API_KEY,
     baseURL: "https://generativelanguage.googleapis.com/v1beta/openai/"
 });
 
