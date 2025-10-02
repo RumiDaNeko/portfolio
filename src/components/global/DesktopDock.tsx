@@ -230,11 +230,6 @@ const DesktopDock = ({ onTerminalClick, onNotesClick, onGitHubClick, activeApps 
       </div>
 
       <ResumeViewer isOpen={showResume} onClose={handleCloseResume} />
-      <SpotifyPlayer
-        isOpen={showSpotify}
-        onClose={handleCloseSpotify}
-        playlistId={userConfig.spotify.playlistId}
-      />
     </>
   );
 };
