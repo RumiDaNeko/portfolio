@@ -1,24 +1,26 @@
 import type { APIRoute } from 'astro';
-import Groq from 'groq-sdk';
+import { GoogleGenAI } from "@google/genai";
 
-const groq = new Groq({
-  apiKey: import.meta.env.GROQ_API_KEY,
-});
+const gemini = new GoogleGenerativeAI(import.meta.env.AI_API_KEY);
 
 export const POST: APIRoute = async ({ request }) => {
   try {
     const body = await request.json();
 
-    const completion = await groq.chat.completions.create({
-      model: 'llama3-8b-8192',
-      messages: body.messages,
+    const completion = await ai.models.generateContent({
+    model: "gemini-2.5-flash",
+    contents: body.messages",
+    config: {
+      thinkingConfig: {
+        thinkingBudget: 10, // Disables thinking
+      },
       temperature: 0.7,
-      max_tokens: 500,
-    });
+    }
+  });
 
     return new Response(
       JSON.stringify({
-        message: completion.choices[0].message.content,
+        message: completion.text,
       }),
       {
         status: 200,
