@@ -1,7 +1,7 @@
 import type { APIRoute } from 'astro';
 import { GoogleGenAI } from "@google/genai";
 
-const gemini = new GoogleGenAI(import.meta.env.AI_API_KEY);
+const gemini = new GoogleGenAI({apiKey: import.meta.env.AI_API_KEY});
 
 export const POST: APIRoute = async ({ request }) => {
   try {
