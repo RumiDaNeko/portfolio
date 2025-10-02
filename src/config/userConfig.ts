@@ -30,6 +30,15 @@ export const userConfig = {
         discord: 'nekoofthecloud', // Add your Calendly URL
     },
 
+    spotify: {
+        playlistId: 'adsdasdwqwd', // Your Spotify playlist ID
+        playlistName: 'None',
+    },
+    
+     resume: {
+
+     },
+
     // Education Background
     education: [
         {
@@ -114,6 +123,22 @@ export const userConfig = {
             description: "Opened a store for discord goods",
             technologies: ["Brain 🧠"]
         },
+    ],
+
+    courses: [
+       
+    ],
+
+    extraCurricularRoles: [
+
+    ],
+
+     extraCurricularActivities: [
+
+    ],
+
+    competitions: [
+
     ],
 
     // SEO Configuration
