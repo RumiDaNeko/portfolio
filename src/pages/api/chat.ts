@@ -19,7 +19,7 @@ export const POST: APIRoute = async ({ request }) => {
 
     return new Response(
       JSON.stringify({
-        message: completion.text,
+        message: completion.choices[0].message.content,
       }),
       {
         status: 200,
