@@ -31,7 +31,9 @@ export default defineConfig({
 
   // Deployment configuration
   output: 'server', // Server-side rendering - required for OpenAI API usage
-  adapter: cloudflare(), // Deploy to Vercel - optional
+  adapter: cloudflare({
+     imageService: 'cloudflare'
+  }), // Deploy to Vercel - optional
   devToolbar: {
     enabled: false,
   },
