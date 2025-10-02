@@ -12,6 +12,7 @@ export const POST: APIRoute = async ({ request }) => {
 
     const completion = await gemini.chat.completions.create({
     model: "gemini-2.5-flash",
+    reasoning_effort: "low",
     messages: body.messages,
       temperature: 0.7,
       max_tokens: 500,
