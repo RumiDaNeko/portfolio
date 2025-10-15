@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { MdWifi } from 'react-icons/md';
-import { FaApple, FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaApple, FaGithub, FaDiscord, FaEnvelope } from 'react-icons/fa';
 import {
   IoSearchSharp,
   IoBatteryHalfOutline,
@@ -139,9 +139,9 @@ export default function MacToolbar({
         action: () => window.open(userConfig.social.github, '_blank'),
       },
       {
-        label: 'LinkedIn',
-        icon: <FaLinkedin size={16} />,
-        action: () => window.open(userConfig.social.linkedin, '_blank'),
+        label: 'Discord',
+        icon: <FaDiscord size={16} />,
+        action: () => window.open(userConfig.social.discord, '_blank'),
       },
       {
         label: 'Email',
