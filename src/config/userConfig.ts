@@ -12,7 +12,7 @@ export const userConfig = {
     // Social Links
     social: {
         github: 'https://github.com/RumiDaNeko',
-        facebook: 'https://www.facebook.com/rumianthan/', // Add your LinkedIn URL
+        discord: 'https://discord.com/users/470047132670361610', // Add your LinkedIn URL
     },
 
     // Contact Information
