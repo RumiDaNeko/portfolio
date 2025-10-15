@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { BsGithub, BsSpotify, BsFilePdf, BsStickyFill, BsLinkedin, BsCalendar } from 'react-icons/bs';
+import { BsGithub, BsSpotify, BsFilePdf, BsStickyFill, BsDiscord, BsCalendar } from 'react-icons/bs';
 import { IoIosCall, IoIosMail } from 'react-icons/io';
 import { FaLink, FaEnvelope } from 'react-icons/fa';
 import ResumeViewer from './ResumeViewer';
@@ -81,13 +81,13 @@ const DesktopDock = ({ onTerminalClick, onNotesClick, onGitHubClick, activeApps 
     >
       <div className="grid grid-cols-1 gap-y-2">
         <a
-          href={userConfig.social.linkedin}
+          href={userConfig.social.discord}
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 text-gray-300 hover:text-white"
         >
-          <BsLinkedin size={20} />
-          <span>LinkedIn</span>
+          <BsDiscord size={20} />
+          <span>Discord</span>
         </a>
         <a
           href={userConfig.social.github}
