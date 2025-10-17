@@ -177,6 +177,10 @@
                                     {
                                         "name": "idk.json",
                                         "type": "file"
+                                    },
+                                    {
+                                        "name": "portfolio.json",
+                                        "type": "file"
                                     }
                                 ]
                             },
