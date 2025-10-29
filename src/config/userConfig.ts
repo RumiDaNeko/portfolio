@@ -85,7 +85,7 @@ export const userConfig = {
             title: "CEO",
             company: "Cloudcode",
             location: "Global",
-            period: "July 2023 - October 2025",
+            period: "July 2023 - Now",
             description: "Running an hosting that enable everyone to run bot for free or with a small price (if they decide to)",
             technologies: ["Docker", "Php", "SQL Server", "Go", "Brain 🧠"],
             images: [
