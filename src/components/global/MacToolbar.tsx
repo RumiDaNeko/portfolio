@@ -225,7 +225,7 @@ export default function MacToolbar({
             {showSignature && (
               <div className="absolute top-full left-0 mt-1 bg-white/98 backdrop-blur-sm rounded-lg p-4 shadow-xl z-[100]">
                   <img 
-                    src="/src/assets/images/me.svg" 
+                    src="https://media.harumi.io.vn/b1b309ef51130584278d71550927df9d.webp" 
                     alt="Signature" 
                     className="w-[100px] h-[100px]"
                   />
