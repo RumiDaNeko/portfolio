@@ -10,17 +10,21 @@ export const POST: APIRoute = async ({ request }) => {
   try {
     const body = await request.json();
 
-    const completion = await gemini.chat.completions.create({
-    model: "gemini-2.5-flash",
-    reasoning_effort: "low",
-    messages: body.messages,
-      temperature: 0.7,
-      max_tokens: 500,
+    const res = await fetch("https://ai-api.harumi.io.vn/", {
+    method: "POST",
+    headers: {
+      "Authorization": "nekotte",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      model: "text-generation",
+      input: body.message,
+    }),
   });
 
     return new Response(
       JSON.stringify({
-        message: completion.choices[0].message,
+        message: res.text(),
       }),
       {
         status: 200,
