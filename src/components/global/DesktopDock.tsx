@@ -173,19 +173,6 @@ const DesktopDock = ({ onTerminalClick, onNotesClick, onGitHubClick, activeApps 
               {hoveredIcon === 'calendar' && <Tooltip text='Schedule a Call' />}
             </button>
 
-            {/* Spotify */}
-            <button
-              onClick={handleSpotifyClick}
-              onMouseEnter={() => setHoveredIcon('spotify')}
-              onMouseLeave={() => setHoveredIcon(null)}
-              className="relative"
-            >
-              <div className={`w-12 h-12 bg-gradient-to-t from-green-600 to-green-400 rounded-xl flex items-center justify-center shadow-lg transition-all duration-300 ease-out hover:scale-110 active:scale-95 ${activeApps.spotify ? 'ring-2 ring-white/50' : ''}`}>
-                <BsSpotify size={35} className='text-white' />
-              </div>
-              {hoveredIcon === 'spotify' && <Tooltip text='Spotify Playlist' />}
-            </button>
-
             {/* Email */}
             <button
               onClick={handleEmailClick}
